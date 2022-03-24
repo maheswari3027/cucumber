@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="44.327">
+<testcase classname="Validating the adactinhotel booking functionality" name="Validating the adactinhotel booking functionality with valid credentials" time="44.078">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#order_no&quot;}&#10;  (Session info: chrome=99.0.4844.82)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'PRIYAGOPI-PC', ip: '192.168.42.116', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_311'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fd1a57d698cb9afcb5dc79bce4841d6b, findElement {using=id, value=order_no}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.17 (395f87df02eed..., userDataDir: C:\Users\PRIYAG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58022/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fd1a57d698cb9afcb5dc79bce4841d6b" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Launch the browser....................................................passed
+And open the adactinhotelbooking url........................................passed
+When Enter the "maheswariprabhu" and "DM928P"...............................passed
+And Click the login button..................................................passed
+And Select the location.....................................................passed
+And Select the hotels.......................................................passed
+And Select the Room Type....................................................passed
+And Select the Numebr of Rooms..............................................passed
+And Click the Search button.................................................passed
+And Click the Radio button..................................................passed
+And Click the Continue button...............................................passed
+And Enter the first name....................................................passed
+And Enter the last name.....................................................passed
+And Enter the billing address...............................................passed
+And Enter the Credit Card number............................................passed
+And Select the credit card type.............................................passed
+And Select the ExpiryMonth and ExpiryYear...................................passed
+And Enter the CVV Number....................................................passed
+And Click the BookNow button................................................passed
+Then Print the Order Id.....................................................failed
+And Close the browser.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#order_no"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'PRIYAGOPI-PC', ip: '192.168.42.116', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_311'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd1a57d698cb9afcb5dc79bce4841d6b, findElement {using=id, value=order_no}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.17 (395f87df02eed..., userDataDir: C:\Users\PRIYAG~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58022/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd1a57d698cb9afcb5dc79bce4841d6b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at com.Hotelbooking.stepdef.HotelBook.print_the_order_id(HotelBook.java:126)
+	at ✽.Print the Order Id(file:///C:/Program%20Files/Java/CucumberProject/src/test/resources/Features/HotelLog.feature:28)
+]]></failure>
+</testcase>
+</testsuite>
